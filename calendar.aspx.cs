@@ -14,10 +14,13 @@ public partial class calendar : System.Web.UI.Page
 
     protected void Calendar_SelectionChanged(object sender, EventArgs e)
     {
+
+        Label.Text = "";
         string myDate = Calendar.SelectedDate.ToShortDateString();
         string schoolStart = "4/3/2017";
         string petDay = "4/11/2017";
-        string birthday = "5/9/2017";
+        string birthday = "5/8/2017";
+        string dinner = "5/8/2107";
         string momDay = "5/14/2017";
         string dadDay = "6/18/2017";
 
@@ -33,8 +36,11 @@ public partial class calendar : System.Web.UI.Page
         }
         else if (myDate.Equals(birthday))
         {
-            Label.Text = "My Birthday";
-
+            Label.Text += "My Birthday";
+        }
+        else if (myDate.Equals(dinner))
+        {
+            Label.Text += "6:00pm - Dinner";
         }
         else if (myDate.Equals(momDay))
         {
