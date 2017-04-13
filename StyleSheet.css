@@ -1,0 +1,19 @@
+body {
+    background-color: #54708A;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1 {
+    color: #4C5054;
+}
+
+
+
+.calendar {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #ffffff;
+}
